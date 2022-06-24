@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './Header.css'
 import logo from '../pic/logo.png'
@@ -9,7 +9,9 @@ const Header = () => {
     const header = document.querySelector('.header')
     header.classList.toggle("active", window.scrollY > 100)
   })
-  
+
+  // Toggle Menu
+  const [mobile, setMobile] = useState(false)
   return (
     <>
       <header className='header'>
@@ -19,7 +21,8 @@ const Header = () => {
           </div>
 
           <div className="navlink">
-            <ul className="link f_flex uppercase">
+            {/* <ul className="link f_flex uppercase"> */}
+            <ul className={mobile ? 'nav-link-mobile' : "link f_flex uppercase"} onClick={() => setMobile(false)}>
               <li><a href="#home">Home</a></li>
               <li><a href="#features">features</a></li>
               <li><a href="#portfolio">portfolio</a></li>
@@ -30,9 +33,9 @@ const Header = () => {
               <li><button className="home-btn">BUY NOW</button></li>
             </ul>
 
-            <button className="toggle">
-              <i className="fas fa-times close home-btn"></i>
-              <i className="fas fa-bars open"></i>
+            <button className="toggle" onClick={() => setMobile(!mobile)}> {
+              mobile ? <i className="fas fa-times close home-btn"></i> : <i className="fas fa-bars open"></i>
+            }
             </button>
           </div>
         </div>

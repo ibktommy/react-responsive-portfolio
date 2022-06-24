@@ -44,3 +44,75 @@ header ul li a:hover {
 .open {
   display: none;
 }
+
+.header.active {
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ecf0f3;
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0..75);
+  transition: .5s;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+  header ul {
+    padding-top: 3rem;
+  }
+
+  .nav-link-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, .23) 0 50px 100px -20px, rgba(0, 0, 0, .3) 0 30px 60px -30px;
+    left: 0;
+    top: 0;
+    transition: all .5s ease-in-out;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    z-index: 888;
+  }
+
+  header ul li {
+    width: 100%;
+    transition: .5s;
+    text-transform: uppercase;
+    line-height: 7rem;
+  }
+
+  header .link {
+    display: none;
+  }
+
+  .close,
+  .open {
+    position: absolute;
+    top: 3.5rem;
+    right: 2rem;
+    color: #ff014f;
+    display: block;
+    font-size: 2.5rem;
+    z-index: 999;
+  }
+
+  .close {
+    right: 45%;
+  }
+
+  .close.home-btn {
+    color: #ff014f
+    ;
+    border-radius: 50%;
+    padding: 0;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+  }
+
+  .header.active {
+    height: 10vh;
+  }
+}
