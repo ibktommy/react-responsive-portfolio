@@ -1,0 +1,46 @@
+header {
+  height: 10vh;
+  line-height: 10vh;
+}
+
+header .container {
+  padding-top: 1.5rem;
+}
+
+header ul li {
+  margin-left: 3rem;
+}
+
+header ul li a {
+  transition: .5s;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  padding: 0 .5rem;
+}
+
+header ul li a:hover {
+  color: #ff014f;
+  font-weight: 700;
+  transition: all ease .2s;
+  letter-spacing: .1rem;
+}
+
+.home-btn {
+  padding: 1.8rem;
+  border-radius: .6rem;
+  transition: .3s ease all;
+  cursor: pointer;
+  height: fit-content;
+  background: linear-gradient(145deg, #e2e8ec, #fff);
+  box-shadow: .4rem .4rem .8rem #cbcbcb, .4rem, -.4rem .8rem #fff;
+}
+
+.home-btn:hover {
+  background-color: #ff014f;
+  color: white;
+}
+
+.open {
+  display: none;
+}

@@ -1,12 +1,21 @@
 import React from 'react'
 
+import './Header.css'
+import logo from '../pic/logo.png'
+
 const Header = () => {
+  // When Header is scrolled
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector('.header')
+    header.classList.toggle("active", window.scrollY > 100)
+  })
+  
   return (
     <>
       <header className='header'>
         <div className='container d_flex'>
           <div className='logo'>
-            <img src='' alt='' />
+            <img src={logo} alt='logo' />
           </div>
 
           <div className="navlink">
@@ -22,7 +31,8 @@ const Header = () => {
             </ul>
 
             <button className="toggle">
-              <i className="fas fa-times"></i>
+              <i className="fas fa-times close home-btn"></i>
+              <i className="fas fa-bars open"></i>
             </button>
           </div>
         </div>
