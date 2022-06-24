@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+}
+
+.hero h3 {
+  font-weight: 100;
+  letter-spacing: .2rem;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.hero h1 span {
+  color: #ff014f;
+}
+
+.hero h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ff014f;
+}
+
+.hero p {
+  color: #878e99;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+
+.hero_btn {
+  margin-top: 20%;
+}
+
+.hero_btn h4 {
+  font-weight: 500;
+  letter-spacing: .2rem;
+  color: #ff014f;
+  font-size: 1.5rem;
+  margin: 3rem 0 3rem 0;
+}
+
+.hero_btn button {
+  margin-right: 3rems;
+}
+
+.hero_btn i {
+  font-size: 2rem;
+}
+
+.hero_btn button img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.hero .left {
+  margin-right: 10%;
+}
+
+.hero .right {
+  width: 40%;
+  position: relative;
+}
+

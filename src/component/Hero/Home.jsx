@@ -1,6 +1,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import "./Home";
+import "./Home.css";
 import hero from "../../pic/hero.png";
 import skill1 from "../../pic/skill1.png";
 import skill2 from "../../pic/skill2.png";
@@ -29,6 +29,47 @@ const Home = () => {
 								/>
 							</span>
 						</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+							quod illo vero officia? Debitis esse, sed necessitatibus,
+							veritatis tenetur dolor nisi iusto corrupti fuga rerum sequi
+							inventore qui autem? Beatae?
+						</p>
+						<div className="hero_btn d_flex">
+							<div className="col_1">
+								<h4>FIND WITH ME</h4>
+								<div className="button">
+									<button className="btn_shadow">
+										<i className="fab fa-facebook"></i>
+									</button>
+									<button className="btn_shadow">
+										<i className="fab fa-instagram"></i>
+									</button>
+									<button className="btn_shadow">
+										<i className="fab fa-linkedin-in"></i>
+									</button>
+								</div>
+							</div>
+
+							<div className="col_1">
+								<h4>BEST SKILL ON</h4>
+								<button className="btn_shadow">
+									<img src={skill1} alt="skill1" />
+								</button>
+								<button className="btn_shadow">
+									<img src={skill2} alt="skill2" />
+								</button>
+								<button className="btn_shadow">
+									<img src={skill3} alt="skill3" />
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div className="right">
+						<div className="right_img">
+							<img src={hero} alt="hero" />
+						</div>
 					</div>
 				</div>
 			</section>
