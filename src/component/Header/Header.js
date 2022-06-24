@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import './Header.css'
-import logo from '../pic/logo.png'
+import logo from '../../pic/logo.png'
 
 const Header = () => {
   // When Header is scrolled
@@ -40,10 +40,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-
-      <section className='demo'>
-
-      </section>
     </>
   )
 }
