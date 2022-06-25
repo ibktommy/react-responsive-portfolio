@@ -40,7 +40,7 @@ const projects = [
     category: "WEB DESIGN",
     totalLike: "690",
     title: "App for tecnology & services",
-    image: "./image/portfolio-06.jpg",
+    image: "./image/portfolio-06.jpeg",
   },
 ]
 export default projects
