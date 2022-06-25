@@ -16,7 +16,7 @@ const Portfolio = () => {
           <div className="content grid">
             {
               projects.map(({ id, ...props }) => {
-                return  <Card />
+                return <Card key={id} {...props} />;
               })
             }
           </div>
