@@ -42,7 +42,7 @@
 }
 
 .hero_btn button {
-  margin-right: 3rems;
+  margin-right: 3rem;
 }
 
 .hero_btn i {
@@ -61,5 +61,21 @@
 .hero .right {
   width: 40%;
   position: relative;
+}
+
+.hero .right_img {
+  background: linear-gradient(145deg, #e2e8ec, #fff);
+  box-shadow: .4rem .4rem .8rem #cbcbcb, .4rem -.4rem .8rem #fff;
+  border-radius: 1rem;
+  height: 58rem;
+  width: 51rem;
+  margin-top: 20%;
+}
+
+.hero .right_img img {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 51rem;
 }
 
