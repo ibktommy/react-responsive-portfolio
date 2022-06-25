@@ -1,0 +1,27 @@
+.features .box {
+  padding: 5rem;
+}
+
+.features .box h2 {
+  margin: 2rem 0 2rem 0;
+}
+
+.features .box p {
+  word-spacing: .2rem;
+  transition: .5s;
+}
+
+.features .box i {
+  font-size: 3rem;
+  margin-top: 2rem;
+  transition: .5s;
+  opacity: 0;
+}
+
+.features .box:hover p {
+  color: white;
+}
+
+.features .box:hover i {
+  opacity: 1;
+}

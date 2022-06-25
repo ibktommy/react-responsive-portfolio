@@ -38,7 +38,7 @@ const Home = () => {
 						</p>
 						<div className="hero_btn d_flex">
 							<div className="col_1">
-								<h4>FIND WITH ME</h4>
+								<h4>FIND ME WITH</h4>
 								<div className="button">
 									<button className="btn_shadow">
 										<i className="fab fa-facebook"></i>
