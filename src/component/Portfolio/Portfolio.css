@@ -1,5 +1,40 @@
-.card-img {
+.portfolio {
+  position: relative;
+}
+
+.portfolio .box {
+  border-radius: 1rem;
+  position: relative;
+}
+
+.portfolio .box:hover {
+  /* background-color: none; */
+  transform: translateY(0);
+}
+
+.portfolio .img {
+  height: 30rem;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.portfolio img {
+  width: 100%;
+  border-radius: 1rem ;
+  transition: .5s;
+}
+
+.portfolio .box .img:hover img{
+  transform: scale(1.2);
+}
+
+.portfolio .category {
+
+}
+
+
+/* .card-img {
   width: 100%;
   height: 35rem;
   object-fit: cover;
-}
+} */
