@@ -21,13 +21,13 @@ const Resume = () => {
 							</div>
 
 							<div className="content">
-								 {
-                  resumedata.map(({ id, ...props }) => {
-                    return (
-                      props.category === "education" && <Card key={id} {...props}/>
-                    )
-                  })
-                 }
+								{resumedata.map(({ id, ...props }) => {
+									return (
+										props.category === "education" && (
+											<Card key={id} {...props} />
+										)
+									);
+								})}
 							</div>
 						</div>
 
@@ -38,16 +38,15 @@ const Resume = () => {
 							</div>
 
 							<div className="content">
-								 {
-                  resumedata.map(({ id, ...props }) => {
-                    return (
-                      props.category === "experience" && <Card key={id} {...props}/>
-                    )
-                  })
-                 }
+								{resumedata.map(({ id, ...props }) => {
+									return (
+										props.category === "experience" && (
+											<Card key={id} {...props} />
+										)
+									);
+								})}
 							</div>
 						</div>
-            
 					</div>
 				</div>
 			</section>

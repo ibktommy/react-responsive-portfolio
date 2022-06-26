@@ -1,9 +1,10 @@
 import React from 'react'
+import './Resume.css'
 
 const Card = ({ category, title, desc, rate , year}) => {
   return (
     <>
-      <div className="box box_shadow">
+      <div className="box btn_shadow">
         <div className="title_content d_flex">
           <div className="title">
             <h2>{title}</h2>
