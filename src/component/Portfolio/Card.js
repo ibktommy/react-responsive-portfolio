@@ -43,7 +43,7 @@ const Card = ({ category, totalLike, title, image }) => {
                 <span>Featured - Design</span>
                 <h1>{title}</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas incidunt, sint nisi aspernatur assumenda?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam fuga maxime quo.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam fuga maxime quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusantium, assumenda explicabo atque quisquam ducimus.</p>
                 <div className="button f_flex mtop">
                   <button className="btn_shadow">
                     LIKE THIS <i className='far fa-thumbs-up'></i>
@@ -52,7 +52,7 @@ const Card = ({ category, totalLike, title, image }) => {
                     VIEW PROJECT <i className='fas fa-chevron-right'></i>
                   </button>
                 </div>
-                <button className="close-modal btn">
+                <button className="btn_shadow close-modal" onClick={toggleModal}>
                   <i className="fas fa-times"></i>
                 </button>
               </div>

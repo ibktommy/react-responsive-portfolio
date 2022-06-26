@@ -1,5 +1,6 @@
 .portfolio {
   position: relative;
+  padding-bottom: 10rem;
 }
 
 .portfolio .box {
@@ -13,13 +14,15 @@
 }
 
 .portfolio .img {
-  height: 30rem;
+  height: 40rem;
   overflow: hidden;
   transition: .5s;
 }
 
 .portfolio img {
   width: 100%;
+  height: 40rem;
+  object-fit: cover;
   border-radius: 1rem ;
   transition: .5s;
 }
@@ -73,3 +76,87 @@
 }
 
 /* POPUP MODAL */
+.modal {
+  padding: 1rem 2rem;
+  display: block;
+  margin: 10rem auto 0;
+  font-size: 1.8rem;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+.overlay {
+  background: #ecf0f3;
+}
+
+.modal-content {
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  line-height: 1.4;
+  background: #f0f3f5;
+  padding: 1.4rem 2.8rem;
+  min-width: 60%;
+  max-width: 85%;
+  /* height: 100%; */
+  z-index: 9999;
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+.modal-img img{
+  width: 100%;
+  height: 60rem;
+  object-fit: cover;
+}
+
+.modal-text {
+  padding: 0 10rem 0 5rem;
+}
+
+.modal-text h1 {
+  margin: 2rem 0 2rem 0;
+  font-size: 3rem;
+}
+
+.modal-text p {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+
+.modal-text button {
+  margin-right: 2rem;
+  color: #ff014f;
+}
+
+.modal-text button i {
+  margin-left: 1rem;
+}
+.modal-text button i.fa-times {
+  margin-left: 0;
+}
+
+.modal-text button.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0 0;
+  font-size: 2rem;
+  z-index: 1500;
+}

@@ -4,7 +4,6 @@ const projects = [
     category: "DEVELOPMENT",
     totalLike: "600",
     title: "The services provide for design ",
-    // image: "./image/portfolio-01.jpg",
     image: './image/portfolio-01.jpg'
   },
   {
@@ -30,9 +29,9 @@ const projects = [
   },
   {
     id: 5,
-    category: "WEB DESIGN",
+    category: "PHOTOGRAPHY",
     totalLike: "280",
-    title: "Design for tecnology & services",
+    title: "Design for technology & services",
     image: "./image/portfolio-05.jpg",
   },
   {
