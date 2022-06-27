@@ -1,9 +1,13 @@
-/* .testimonial {
-  position: relative;
-} */
+.testimonial {
+  min-height: 90vh;
+}
+
+.testimonial .details {
+  margin-top: 2rem;
+}
 
 .testimonial h2 {
-  margin: 1.5rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .testimonial .left {
@@ -19,8 +23,8 @@
 }
 
 .testimonial .quote i {
-  font-size: 15rem;
-  opacity: 0.1;
+  font-size: 10rem;
+  opacity: 0.2;
 }
 
 .testimonial .content {
@@ -51,7 +55,7 @@
 .testimonial .slide {
   max-width: 80%;
   margin: auto;
-  height: 50rem;
+  height: 56rem;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -80,9 +84,15 @@ article.nextSlide {
   transform: translateX(100%);
 }
 
-.slider-img {
+article .img {
   width: 35rem;
-  height: 30rem;
-  border-radius: 8px;
+  height: 40rem;
+  border-radius: 1.5rem;
+}
+
+article .img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: inherit;
 }

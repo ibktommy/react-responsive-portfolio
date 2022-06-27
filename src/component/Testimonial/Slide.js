@@ -22,17 +22,17 @@ const Slide = ({ id, image, design, name, role, post, date, desc, valueIndex, in
           <div className="img">
             <img src={image} alt={name} className='slider-img' />
           </div>
-          <div className="details mtop">
+          <div className="details">
             <span>{design}</span>
             <h2>{name}</h2>
-            <label>{role}</label>
+            <label htmlFor="#">{role}</label>
           </div>
         </div>
 
         <div className="right">
           <div className="icon">
             <div className="quote">
-              <i className="fal fa-quote-right"></i>
+              <i class="fa-solid fa-quote-right"></i>
             </div>
           </div>
 
