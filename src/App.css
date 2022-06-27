@@ -54,6 +54,12 @@ button {
   transform: translateY(-10px);
 }
 
+.box_shadow {
+  background: linear-gradient(145deg, #e2e8ec, #fff);
+  box-shadow: .4rem .4rem .8rem #cbcbcb, .4rem -.4rem .8rem #fff;
+  border-radius: 1rem;
+}
+
 .row, .left, .right {
   width: 50%;
 }
