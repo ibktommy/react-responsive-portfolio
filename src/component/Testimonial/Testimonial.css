@@ -2,7 +2,7 @@
   position: relative;
 } */
 
-h2 {
+.testimonial h2 {
   margin: 1.5rem 0 0 0;
 }
 
@@ -16,6 +16,11 @@ h2 {
   width: 65%;
   padding: 0 0 0 5rem;
   margin: 0 2rem 0 0;
+}
+
+.testimonial .quote i {
+  font-size: 15rem;
+  opacity: 0.1;
 }
 
 .testimonial .content {
@@ -40,4 +45,44 @@ h2 {
 
 .testimonial .slide_button .prev_btn {
   margin-left: 3rem;
+}
+
+/* Testimonial Slider */
+.testimonial .slide {
+  max-width: 80%;
+  margin: auto;
+  height: 50rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .3s linear;
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+article.lastSlide {
+  transform: translateX(-100%)
+}
+
+article.nextSlide {
+  transform: translateX(100%);
+}
+
+.slider-img {
+  width: 35rem;
+  height: 30rem;
+  border-radius: 8px;
+  object-fit: cover;
 }

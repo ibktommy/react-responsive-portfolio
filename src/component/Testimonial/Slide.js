@@ -1,7 +1,8 @@
 import React from 'react'
 import testimonialData from './TestimonialData'
+import './Testimonial.css'
 
-const Slide = ({ image, design, name, role, post, date, desc, valueIndex, index }) => {
+const Slide = ({ id, image, design, name, role, post, date, desc, valueIndex, index }) => {
 
   let position = "nextSlide"
   
@@ -16,10 +17,10 @@ const Slide = ({ image, design, name, role, post, date, desc, valueIndex, index 
 
   return (
     <>
-      <div className="box d_flex">
+      <article className={`d_flex ${position}`} key={id}>
         <div className="left box_shadow">
           <div className="img">
-            <img src="" alt=""/>
+            <img src={image} alt={name} className='slider-img' />
           </div>
           <div className="details mtop">
             <span>{design}</span>
@@ -41,7 +42,7 @@ const Slide = ({ image, design, name, role, post, date, desc, valueIndex, index 
             <p>{desc}</p>
           </div>
         </div>
-      </div>
+      </article>
     </>
   )
 }
