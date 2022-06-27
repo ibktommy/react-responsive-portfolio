@@ -34,7 +34,7 @@ const Card = ({ category, totalLike, title, image }) => {
       {/* POPUP MODAL */}
       {modal && (
         <div className="modal">
-          <div className="overlay">
+          <div className="overlay" onClick={toggleModal}>
             <div className="modal-content d_flex">
               <div className="modal-img left">
                 <img src={image} alt={title} />
