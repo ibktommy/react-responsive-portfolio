@@ -1,5 +1,6 @@
 import React from "react";
 import Slide from "./Slide";
+import testimonialData from "./TestimonialData";
 
 const Testimonial = () => {
 	return (
@@ -12,7 +13,9 @@ const Testimonial = () => {
 					</div>
 
 					<div className="slide">
-						<Slide />
+						{testimonialData.map(({ id, ...props }) => {
+							return <Slide key={id} {...props} />;
+						})}
 					</div>
 
 					<div className="slide_button">

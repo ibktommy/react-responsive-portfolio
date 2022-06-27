@@ -1,7 +1,7 @@
 const testimonialData = [
   {
     id: 1,
-    image: "./image/slide1.png",
+    image: "./image/slide1.jpg",
     design: "NCD - DESIGN",
     name: "Mevine Thoda",
     position: "Marketing Officer",
@@ -11,7 +11,7 @@ const testimonialData = [
   },
   {
     id: 2,
-    image: "./image/slide2.png",
+    image: "./image/slide2.jpg",
     design: "Default name",
     name: "Davei Luace",
     position: "Chief Operating Manager",
@@ -21,7 +21,7 @@ const testimonialData = [
   },
   {
     id: 3,
-    image: "./image/slide3.png",
+    image: "./image/slide3.jpg",
     design: "Rainbow-Themes",
     name: "Nevine Acotanza",
     position: "Chief Operating Officer",
@@ -31,7 +31,7 @@ const testimonialData = [
   },
   {
     id: 4,
-    image: "./image/slide4.png",
+    image: "./image/slide4.jpg",
     design: "Bound - Trolola",
     name: "Jone Duone Joe",
     position: "Operating Officer",
@@ -41,7 +41,7 @@ const testimonialData = [
   },
   {
     id: 5,
-    image: "./image/slide5.png",
+    image: "./image/slide5.jpg",
     design: "Glassfisom",
     name: "Nevine Dhawan",
     position: "CEO Of Officer",

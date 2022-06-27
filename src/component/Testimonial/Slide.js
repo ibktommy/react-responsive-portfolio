@@ -1,7 +1,6 @@
 import React from 'react'
-import testimonialData from './TestimonialData'
 
-const Slide = () => {
+const Slide = ({ image, design, name, position, post, date, desc }) => {
   return (
     <>
       <div className="box d_flex">
@@ -10,9 +9,9 @@ const Slide = () => {
             <img src="" alt="" />
           </div>
           <div className="details mtop">
-            <span>design</span>
-            <h2>name</h2>
-            <label>position</label>
+            <span>{design}</span>
+            <h2>{name}</h2>
+            <label>{position}</label>
           </div>
         </div>
 
@@ -24,9 +23,9 @@ const Slide = () => {
           </div>
 
           <div className="content box_shadow mtop">
-            <h1>post</h1>
-            <h3>date</h3>
-            <p>desc</p>
+            <h1>{post}</h1>
+            <h3>{date}</h3>
+            <p>{desc}</p>
           </div>
         </div>
       </div>
