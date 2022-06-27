@@ -36,8 +36,8 @@ const Testimonial = () => {
 					</div>
 
 					<div className="slide">
-						{testimonialData.map(({ id, ...props }) => {
-							return <Slide key={id} {...props} />;
+						{testimonialData.map(({ id, valueIndex, ...props}) => {
+							return <Slide key={id} {...props} valueIndex={valueIndex} index={index} />;
 						})}
 					</div>
 

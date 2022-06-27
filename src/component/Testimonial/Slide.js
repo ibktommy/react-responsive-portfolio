@@ -1,17 +1,30 @@
 import React from 'react'
+import testimonialData from './TestimonialData'
 
-const Slide = ({ image, design, name, position, post, date, desc }) => {
+const Slide = ({ image, design, name, role, post, date, desc, valueIndex, index }) => {
+
+  let position = "nextSlide"
+  
+  if(valueIndex === index) {
+    position = "activeSlide"
+  }
+
+  if (valueIndex === index -1 || (index === 0 && valueIndex === testimonialData.length - 1)) {
+    position = "lastSlide"
+  }
+
+
   return (
     <>
       <div className="box d_flex">
         <div className="left box_shadow">
           <div className="img">
-            <img src="" alt="" />
+            <img src="" alt=""/>
           </div>
           <div className="details mtop">
             <span>{design}</span>
             <h2>{name}</h2>
-            <label>{position}</label>
+            <label>{role}</label>
           </div>
         </div>
 
