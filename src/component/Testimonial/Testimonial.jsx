@@ -1,6 +1,7 @@
 import React from "react";
 import Slide from "./Slide";
 import testimonialData from "./TestimonialData";
+import "./Testimonial.css";
 
 const Testimonial = () => {
 	return (
