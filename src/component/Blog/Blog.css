@@ -19,3 +19,7 @@
   margin-top: 3rem;
 }
 
+.blog_contact .right,
+.blog_contact .left {
+  margin: 0 2.5rem 0 0;
+}
