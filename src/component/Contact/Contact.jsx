@@ -36,15 +36,15 @@ const Contact = () => {
 	};
 
 	return (
-		<>
+		<div>
 			<section className="contact" id="contact">
-				<div className="contaner-top">
+				<div className="container-top">
 					<div className="heading text-center">
 						<h4>CONTACT</h4>
 						<h1>Connect With Me</h1>
 					</div>
 
-					<div className="container d_flex">
+					<div className="content d_flex">
 						<div className="left">
 							<div className="box box_shadow">
 								<div className="img">
@@ -57,9 +57,9 @@ const Contact = () => {
 										call in to my account.
 									</p>
 									<p>Phone: +0123456789</p>
-									<p>Email: admin@email.com</p>
+									<p>Email: admin@email.com</p> <br />
 									<span>FIND ME WITH</span>
-									<div className="button d_flex">
+									<div className="button f_flex">
 										<button className="btn_shadown">
 											<i className="fab fa-facebook-f"></i>
 										</button>
@@ -74,7 +74,7 @@ const Contact = () => {
 							</div>
 						</div>
 
-						<div className="right box_shadown">
+						<div className="right box_shadow">
 							<form onSubmit={formSubmit}>
 								<div className="f_flex">
 									<div className="input row">
@@ -95,44 +95,44 @@ const Contact = () => {
 											onChange={InputEvent}
 										/>
 									</div>
-									<div className="input">
-										<span>EMAIL</span>
-										<input
-											type="email"
-											name="email"
-											value={data.email}
-											onChange={InputEvent}
-										/>
-									</div>
-									<div className="input">
-										<span>SUBJECT</span>
-										<input
-											type="text"
-											name="subject"
-											value={data.subject}
-											onChange={InputEvent}
-										/>
-									</div>
-									<div className="input">
-										<span>YOUR MESSAGE</span>
-										<textarea
-											cols="30"
-											name="message"
-											value={data.message}
-											onChange={InputEvent}
-										/>
-									</div>
-									<button className="btn_shadow">
-										SEND MESSAGE
-										<i className="fa fa-long-arrow-down"></i>
-									</button>
 								</div>
+								<div className="input">
+									<span>EMAIL</span>
+									<input
+										type="email"
+										name="email"
+										value={data.email}
+										onChange={InputEvent}
+									/>
+								</div>
+								<div className="input">
+									<span>SUBJECT</span>
+									<input
+										type="text"
+										name="subject"
+										value={data.subject}
+										onChange={InputEvent}
+									/>
+								</div>
+								<div className="input">
+									<span>YOUR MESSAGE</span>
+									<textarea
+										cols="30"
+										name="message"
+										value={data.message}
+										onChange={InputEvent}
+									></textarea>
+								</div>
+								<button className="btn_shadow">
+									SEND MESSAGE
+									<i className="fa fa-long-arrow-down"></i>
+								</button>
 							</form>
 						</div>
 					</div>
 				</div>
 			</section>
-		</>
+		</div>
 	);
 };
 

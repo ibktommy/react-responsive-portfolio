@@ -59,7 +59,7 @@ const Card = ({ date, title_one, desc_one, title_two, desc_two, title_three, des
                     <input type="text" placeholder='Name' />
                     <input type="text" placeholder='Email' />
                     <input type="text" placeholder='Website' />
-                    <buton className="btn_shadow">SUMIT NOW</buton>
+                    <button className="btn_shadow">SUBMIT NOW</button>
                   </div>
 
                   <div className="right">
