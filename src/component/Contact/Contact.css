@@ -10,6 +10,12 @@
   padding: 3rem;
 }
 
+.contact .box .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .contact .details h1 {
   margin: 2rem 0 2rem 0;
   font-size: 3.5rem;

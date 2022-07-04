@@ -114,3 +114,19 @@ input {
   border: 3px solid #e2e8ec;
   margin-bottom: 2rem;
 }
+
+footer {
+  margin: 20% 0 10% 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}

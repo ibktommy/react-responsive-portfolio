@@ -79,3 +79,40 @@
   width: 51rem;
 }
 
+/* Respnsiveness */ 
+@media (max-width: 768px) {
+  .hero .right,
+  .hero .left {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  .hero .f_flex {
+    flex-direction: column-reverse;
+  }
+
+  .hero .right_img {
+    width: 95%;
+    height: 54vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal,
+  .overlay {
+    overflow: scroll;
+  }
+
+  .modal .modal-img {
+    margin: 5rem 0 5rem 0;
+  }
+
+  .modal-content {
+    flex-direction: column-reverse;
+  }
+
+  .modal .right,
+  .modal .left {
+    padding: 0;
+  }
+}
