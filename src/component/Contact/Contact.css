@@ -58,3 +58,20 @@
   margin-left: 1rem;
 }
 
+/* Responsiveness */
+@media (max-width: 768px) {
+  .contact .d_flex {
+    flex-direction: column;
+  }
+
+  .contact .left,
+  .contact .right {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .contact img {
+    width: 100%;
+  }
+}
+

@@ -36,16 +36,6 @@ const Testimonial = () => {
 					</div>
 
 					<div className="slide">
-						{/* {data.map(({ id, valueIndex, ...props }) => {
-							return (
-								<Slide
-									key={id}
-									{...props}
-									valueIndex={valueIndex}
-									index={index}
-								/>
-							);
-						})} */}
 
 						{data.map((value, valueIndex) => {
 							return (
